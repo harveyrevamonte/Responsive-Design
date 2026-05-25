@@ -89,20 +89,21 @@ a:hover {
     display: block;
     width: 24px;
     height: 2px;
-     background: #f0f0f0;
+     background: #c8f135;
      border-radius: 2px;
      transition: transform 0.3s, opacity 0.3s;
 }
 
-.menu-toggle:checked + nav .hamburger span:nth-child(1) {
+.menu-toggle:checked ~ nav .hamburger span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
-.menu-toggle:checked + nav .hamburger span:nth-child(2) {
+.menu-toggle:checked ~ nav .hamburger span:nth-child(2) {
   opacity: 0;
   transform: scaleX(0);
 }
-.menu-toggle:checked + nav .hamburger span:nth-child(3) {
+
+.menu-toggle:checked ~ nav .hamburger span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
