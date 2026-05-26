@@ -212,7 +212,9 @@ width: 100%;
     gap: 30px;
     border-bottom: 1px solid #888;
     padding: 0 0 1rem 0;
-    width: 100%;
+    max-width: 400px;
+    width: 90%;
+   
     
 }
 
@@ -281,7 +283,7 @@ width: 100%;
 
 .buttons-hero {
     justify-content: center;
-
+   
 }
 
 }
