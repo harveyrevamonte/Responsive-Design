@@ -239,13 +239,14 @@ width: 100%;
 .numbers-population {
     margin-top: 1rem;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .numbers-population h4 {
     font-family: 'Syne', sans-serif;
     font-size: 3rem;
     color: #fafafa;
+    font-size: clamp(2.1rem, 3vw, 3.5rem);
 
 }
 
@@ -254,6 +255,7 @@ width: 100%;
     color: #888;
     font-size: 0.8rem;
     font-weight: 500;
+    font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 @media (max-width: 768px) {
