@@ -169,7 +169,10 @@ a:hover {
     display: flex;
     gap: 4rem;
     align-items: center;   
-   
+    padding-right:2rem;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .left-hero {
@@ -256,7 +259,7 @@ width: 100%;
     font-family: 'Syne', sans-serif;
     font-size: 3rem;
     color: #fafafa;
-    font-size: clamp(2.1rem, 3vw, 3.5rem);
+    font-size: clamp(1.55rem, 3vw, 3.5rem);
 
 }
 
@@ -304,8 +307,9 @@ width: 100%;
 .value-part h2 {
     font-family: 'Syne', sans-serif;
     color: #fafafa;
-    font-size: 2.5rem;
+    font-size: clamp(1.95rem, 3vw, 2.5rem);
     font-weight: 800;
+
 }
 
 .value-part p {
@@ -346,13 +350,13 @@ width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    padding: 0 1.5rem 2rem 1.5rem;
 }
 
 .right-hero-container {
     max-width: 700px;
     width: 100%;
-    margin: 0 auto;
+   
 }
 
 .right-content {
@@ -377,6 +381,12 @@ width: 100%;
 .buttons-hero {
     justify-content: center;
    
+}
+
+.numbers-population {
+   
+    justify-content: center;
+    text-align: center;
 }
 
 .right-hero-container {
