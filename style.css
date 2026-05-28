@@ -18,6 +18,7 @@ body {
     position: sticky;
     z-index: 100;
         top: 0;
+        
        
 }   
 
@@ -235,6 +236,7 @@ width: 100%;
     padding: 0 0 1rem 0;
     max-width: 400px;
     width: 90%;
+    flex-wrap: wrap;
    
     
 }
@@ -263,6 +265,7 @@ width: 100%;
     margin-top: 1rem;
     display: flex;
     gap: 3rem;
+   
    
 }
 
@@ -371,6 +374,7 @@ width: 100%;
     flex-direction: column;
     gap: 2rem;
     padding: 2rem 0 0 2rem;
+   
 }
 
 .box {
@@ -393,6 +397,7 @@ width: 100%;
     display: flex;
     align-items: center;
     gap: 1rem;
+   flex-shrink: 0;
 }
 
 .content {
@@ -493,10 +498,27 @@ width: 100%;
 
 .right-boxes-container {
    
-    max-width: 410px;
+    max-width: 700px;
     width: 100%;
      padding: 0 1.5rem 0 1.5rem;
     margin: 1rem auto;
+    align-items: center;
 }
 
+}
+
+@media (max-width: 334px) {
+
+   .numbers-population {
+    flex-wrap: wrap;
+    padding: 0 2rem 0 1.5rem;
+   }
+
+    .inner-box {
+       flex-wrap: wrap;
+       align-items: center;
+     
+    }
+
+  
 }
