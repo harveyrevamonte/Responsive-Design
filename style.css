@@ -9,6 +9,11 @@ body {
     background-color: #0f0f0f; 
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
 .navbar {
    
     background-color: #1a1a1a;
@@ -520,14 +525,37 @@ li::marker {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
+     overflow: hidden;
 }
 
+.grid-box:hover {
+  border-color: #c8f13540;
+}
+
+.grid-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c8f135, transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid-box:hover::before {
+  opacity: 1;
+}
+
+
 .grid-box h3 {
-    width: 15%;
+    width: 50px;
     background-color: #2a2a2a;
     padding: 0.5rem;
     border-radius: 30%;
     font-size: clamp(1rem, 3vw, 1.2rem);
+    text-align: center;
 }
 
 .grid-box h2 {
