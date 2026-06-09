@@ -850,8 +850,9 @@ li::marker {
 
 .cta-buttons {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cta-btn1, .cta-btn2 {
